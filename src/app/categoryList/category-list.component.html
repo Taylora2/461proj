@@ -1,0 +1,8 @@
+
+ <h1>Hello {{currentUser.firstName}}!</h1>
+ <p> Please select a shoping Category </p>
+ <ul class="categoriesArray">
+     <p *ngFor="let item of catagoryList">
+         <button (click)="newMessage(item)" routerLink="/itemlist"class="btn btn-primary">{{ item }}</button><br>
+     </p>
+ </ul>
