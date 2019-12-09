@@ -41,11 +41,19 @@ export class CategoryListComponent implements OnInit {
     //this.service.selectedCategory.subscribe(selectedCategory =>this.selectedCategory = selectedCategory);
     this.service.currentMessage.subscribe(message => this.message = message)
 
-    ////comment this out to show it connects
+    ////comment this out to use array instead
     this.getAllCategoriesTable();
+
+    ////trying to change it to a tring here
+    // for( let i of this.catagoryList){
+    //   let temp : string;
+    //   temp = JSON.stringify(this.catagoryList[i]);
+    //   this.catagoryList[i] = temp;
+    // }
+    
   }
 
-  ////comment this out to show it connects
+  ////comment this out to use array instead
   getAllCategoriesTable(){
     const catObservable = this.dbservice.getAllCategoriesTable();
     catObservable.subscribe((catData: any[])=>{
