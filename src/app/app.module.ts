@@ -20,6 +20,8 @@ import { CategoryListComponent } from './categoryList/category-list.component';
  import { ItemDetailComponent } from './itemDetail/item-detail.component';
 import { CategoryListService } from '@/category.service';
 import { ItemListService } from '@/item.service';
+import { databaseService } from '@/database.service';
+
 
 @NgModule({
     imports: [
@@ -46,6 +48,7 @@ import { ItemListService } from '@/item.service';
 
         CategoryListService,
         ItemListService,
+        databaseService,
     
 
         // provider used to create fake backend

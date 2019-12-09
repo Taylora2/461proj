@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { CategoryListService } from '@/category.service';
 
+import { HttpClient } from '@angular/common/http'; 
+
 @Injectable({
   providedIn: 'root'
 })
