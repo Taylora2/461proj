@@ -42,7 +42,7 @@ export class CategoryListComponent implements OnInit {
     this.service.currentMessage.subscribe(message => this.message = message)
 
     ////comment this out to use array instead
-    this.getAllCategoriesTable();
+    // this.getAllCategoriesTable();
 
     ////trying to change it to a tring here
     // for( let i of this.catagoryList){
@@ -54,13 +54,13 @@ export class CategoryListComponent implements OnInit {
   }
 
   ////comment this out to use array instead
-  getAllCategoriesTable(){
-    const catObservable = this.dbservice.getAllCategoriesTable();
-    catObservable.subscribe((catData: any[])=>{
-        this.catagoryList = catData;
-        console.log(this.catagoryList);
-    })
-  }
+  // getAllCategoriesTable(){
+  //   const catObservable = this.dbservice.getAllCategoriesTable();
+  //   catObservable.subscribe((catData: any[])=>{
+  //       this.catagoryList = catData;
+  //       console.log(this.catagoryList);
+  //   })
+  // }
 
 
   newMessage(selected:string) {
